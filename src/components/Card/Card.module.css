@@ -1,0 +1,51 @@
+.card {
+    background-color: var(--bg_default);
+    border-radius: var(--base-border-radius);
+    height: 330px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.img-container {
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+}
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: var(--base-border-radius);
+    border-top-left-radius: var(--base-border-radius);
+}
+
+.card-title {
+    font-size: var(--base-font-size);
+    margin-left: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-info {
+    display: flex;
+    padding-top: 1.5rem;
+    color: var(--body-text);
+    flex-direction: column;
+}
+.card-rating{
+    padding-top: 20px;
+    padding-bottom: var(--base-padding);
+    margin-left: 16px;
+}
+.card-name {
+    font-size: var(--base-font-size);
+    font-weight: 700;
+    margin-left: 16px;
+}
+.author {
+    font-size: 0.7rem;
+    margin-left: 16px;
+    font-weight: 200;
+}

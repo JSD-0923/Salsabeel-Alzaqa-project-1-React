@@ -1,0 +1,4 @@
+.rating-stars {
+    color: rgb(206, 123, 0);
+    font-size: var(--base-font-size);
+}

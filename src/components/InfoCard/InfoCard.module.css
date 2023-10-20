@@ -1,0 +1,42 @@
+.card-details {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.card-details .details-container {
+    margin: auto;
+    width: 70%;
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.card-details .details-container .card-content {
+    width: 60%;
+}
+.rate{
+    padding-bottom: 20px;
+}
+@media screen and (max-width:1200px) {
+    .card-details .details-container .card-content {
+        width: 50%;
+    }
+}
+.card-details .card-content .card-title {
+    color: var(--brand-secondary);
+}
+
+@media screen and (max-width:950px) {
+    .details-container {
+        flex-direction: column-reverse;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        gap: 20px;
+    }
+    .card-details .details-container .card-content {
+        width: 100%;
+    }
+}

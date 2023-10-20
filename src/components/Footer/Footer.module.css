@@ -1,0 +1,13 @@
+/* footer */
+footer {
+    background-color: var(--bg_body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: var(--base-padding);
+    min-height: 10vh;
+}
+
+footer .footer-icon {
+    color: var(--heart-color);
+}
