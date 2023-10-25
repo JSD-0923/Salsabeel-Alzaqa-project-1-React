@@ -9,7 +9,7 @@ const Card = ({ image, category, topic, rating, name, id }) => {
                 <img className={styles['card-img']} src={require('../../assets/' + image)} alt={`${topic} card`} />
             </div>
             <div className={styles['card-info']}>
-                <h2 className={styles['card-title']}>{category}</h2>
+                <p className={styles['card-title']}>{category}</p>
                 <p className={styles['card-name']}>{topic}</p>
                 <div className={styles['card-rating']}>
                     <Rating rating={rating} />

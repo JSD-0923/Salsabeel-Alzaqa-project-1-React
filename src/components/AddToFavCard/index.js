@@ -7,7 +7,7 @@ const AddToFavCard = ({name , topic , image}) => {
         <div className={styles["add-to-fav-card"]}>
             <div className={styles["img-container"]}>
                 <img className={styles["card-img"]} src={require('../../assets/' + image)} alt={`${topic} card`} />
-                <p className={styles.link}><b>{topic}</b> by <a href="#" className={styles["author-link"]}>{name}</a></p>
+                <p className={styles.link}><b>{topic}</b> by <a href="/" className={styles["author-link"]}>{name}</a></p>
             </div>
             <div className={styles["add-to-fav"]}>
                 <p>Intrested about this topic ?</p>

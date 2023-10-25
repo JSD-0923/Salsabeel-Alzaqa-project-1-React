@@ -23,11 +23,13 @@
     font-size: var(--base-font-size);
     margin-left: 16px;
     font-weight: 400;
+   
+}
+.card-title,.card-name{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
 .card-info {
     display: flex;
     padding-top: 1.5rem;
