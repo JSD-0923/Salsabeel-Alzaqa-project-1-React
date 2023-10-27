@@ -3,4 +3,5 @@ section.result{
     font-weight: 700;
     margin-top: 15px;
     margin-bottom: 20px;
+    color: var(--body-text);
 }

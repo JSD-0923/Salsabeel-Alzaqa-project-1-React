@@ -9,12 +9,14 @@
 .search-icon {
     padding-left: var(--base-padding);
     padding-top: 10px;
+    color: var(--body-text);
 }
 .search-input {
     width: 100%;
     height: 100%;
     background-color: var(--bg_default);
     border: none;
+    color: var(--body-text);
 }
 @media screen and (min-width: 700px) and (max-width: 900px) {
     .search {

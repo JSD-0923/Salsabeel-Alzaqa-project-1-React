@@ -9,6 +9,7 @@ section.welcoming {
 .welcom-content {
     padding-top: 2rem;
     padding-left: var(--base-padding);
+    color: var(--body-text);
 }
 
 .first-text {

@@ -19,6 +19,7 @@
 .select-btn label {
     font-size: 0.8rem;
     padding-left: var(--base-padding);
+    color: var(--body-text);
 }
 
 

@@ -6,13 +6,11 @@ function Navbar() {
     const buttonsData = [
         {
             id: 1,
-            buttonName:"Dark mood",
-            className: "theme-btn",
+            buttonName:"theme",
             iconName:faMoon
         }, {
             id: 2,
-            buttonName:"Favourite",
-            className: "favourite-btn",
+            buttonName:"favourite",
             iconName: faHeart
         }]
     return (
@@ -20,7 +18,7 @@ function Navbar() {
             <a href="/" className={styles.name} aria-label="the website name">Web Topics</a>
             <div className={styles['nav-btns']}>
                 {buttonsData.map( item => {
-                    return <HeaderButton key={item.id} classname={item.className} iconName={item.iconName} buttonName={item.buttonName} />
+                    return <HeaderButton key={item.id} iconName={item.iconName} buttonName={item.buttonName} />
                 })}
             </div>
         </nav>

@@ -1,8 +1,9 @@
 .topic-list {
     background-color: var(--bg_default);
     width: 40%;
-    margin: 40px 0;
+    margin-top: 40px;
     margin-left: 220px;
+    color: var(--body-text);
 }
 
 .topic-title {
@@ -37,6 +38,6 @@
 @media screen and (max-width:1100px) {
     .topic-list {
         width: 90%;
-        margin: 70px auto;
+        margin: 40px auto 0px auto;
     }
 }

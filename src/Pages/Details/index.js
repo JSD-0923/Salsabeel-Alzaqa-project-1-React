@@ -3,35 +3,27 @@ import { useParams } from 'react-router-dom';
 import InfoCard from '../../components/InfoCard';
 import Loading from '../../components/Loading';
 import SubTopics from '../../components/SubTopics';
+import useApi from '../../hooks/useApi';
+import styles from './Details.module.css'
 const Details = () => {
     const [cardDetails, setCardDetails] = useState(null); 
     const { id } = useParams();
+    const { data, apiLoading } = useApi(`https://tap-web-1.herokuapp.com/topics/details/${id}`);
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(`https://tap-web-1.herokuapp.com/topics/details/${id}`);
-                if (!response.ok) {
-                    throw new Error("Failed to fetch data");
-                }
-                const data = await response.json();
-                setCardDetails(data);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
-        fetchData();
-    }, [id]);
+        if (data) {
+            setCardDetails(data);
+        }
+    }, [data]);
     return (
-        <>
-            {cardDetails !== null ? (
-                <>
+        <main className={styles['details-page-main']}>
+            {apiLoading ? <Loading /> : 
+            cardDetails &&
+                (<>
                     <InfoCard {...cardDetails} />
                     <SubTopics subtopics={cardDetails.subtopics} topic={cardDetails.topic} />
-                </>
-            ) : (
-                <Loading />
-            )}
-        </>
+                </>)
+            }
+        </main>
     );
 }
 export default Details;

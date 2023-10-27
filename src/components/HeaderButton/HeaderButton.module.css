@@ -11,3 +11,6 @@ button {
     background-color: var(--bg_default);
     gap: 5px;
 }
+button p::first-letter {
+    text-transform: uppercase;
+}

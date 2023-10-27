@@ -5,21 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-:root {
-  --brand-primary: #0768AC;
-  --brand-secondary: #03C180;
-  --bg_default: #FFFFFF;
-  --bg_body: #F0F9FF;
-  --lines-color: #DDDDDD;
-  --body-text: #333333;
-  --heart-color: #DC143C;
-  --base-font-size: 1rem;
-  --base-border-radius: 5px;
-  --base-padding: 5px;
-}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
-  min-height: 100vh;
+  min-height:100vh;
   background-color: var(--bg_body);
   color: var(--body-text);
 }

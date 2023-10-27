@@ -20,6 +20,7 @@
 .favourite-cards {
     display: flex;
     padding: var(--base-padding);
+    flex-direction: row;
     justify-content: flex-start;
     overflow-x: auto;
     gap: 15px;
